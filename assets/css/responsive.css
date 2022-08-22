@@ -1,0 +1,334 @@
+@media screen and (max-width: 1024px) {
+
+    /* header */
+    header {
+        padding: 0px 30px !important;
+    }
+    .logo, .darkmode-logo {
+        height:6vw;
+    }
+    .ham {
+        display: block;
+    }
+    header .navbar {
+        display: none;
+    }
+    section {
+        padding: 30px 30px;
+    }
+    
+    /* section one */
+
+    .mob-lep {
+        margin-top: 0px;
+        margin-left: 0px !important;
+    }
+
+    /* categories section */
+
+    .ctgr-section h1, .ctgr-section p {
+       padding: 0 !important;
+       margin: 30px !important;
+    }
+    .ctgr-section p {
+        width: 90% !important;
+    }
+
+    /* blocks */
+
+    .block-h1 {
+        position: relative !important;
+        right: auto !important;
+    }
+
+    /* slider section */
+
+    .slider-section h1 {
+        margin-right: 30px !important;
+    }
+    .slider-section button {
+        margin-left: 30px !important;
+        margin-top: 20px;
+    }
+
+    /* video section */
+
+    .video-section h1 {
+        margin-bottom: 0px !important;
+    }
+    .video-section button {
+        margin-top: 24px !important;
+    }
+
+    /* footer */
+
+    .footer-nav {
+        display: none !important;
+    }
+    .ftr {
+        padding: 30px !important;
+    }
+    .drp {
+        position: absolute;
+        top: -415px;
+        right: 20px;
+    }
+    .soc {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .scrollup {
+        position: absolute;
+        right: 0;
+    }
+    .ftr-con {
+        padding: 20px !important;
+    }
+    .ftr-con .float-right {
+        float: none !important;
+    }
+    .ftr-mb {
+        margin-right: 20px !important;
+    }
+    .drop-country .dropdown-toggle::after {
+        margin-left: 25px !important;
+    }
+    .btn-country, .drop-country .dropdown-menu {
+        width: 90px;
+    }
+    .drop-country {
+        margin-right: 30px;
+    }
+    .mob-nav  {
+        display: block;
+        font-family: 'FiraGO-Bold';
+    }
+    .mob-nav nav {
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    /* video page */
+    .video-box {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/* mobile responsive */
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 8vw !important;
+    }
+    h2 {
+        font-size: 7vw !important;
+    }
+    h3 {
+        font-size: 25px !important;
+    }
+    
+    /* header */
+
+    /* firstpage */
+    .desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	.firstpage {
+		padding: 50px 50px;;
+	}
+	.mobile .darkmode-logo, .mobile .light-mode {
+		margin-left: auto;
+		margin-right: auto;
+	}
+    
+    /* section one */
+
+    .mob-lep2 {
+        width: 100%;
+        object-fit: contain;
+    }
+    .section-one h1 {
+        margin-bottom: 10px !important;
+    }
+    .section-one input {
+        width: 70vw;
+    }
+    .call {
+        border: none !important;
+        padding: 0px !important;
+    }
+    /* categories */
+
+    .categories {
+        overflow: hidden;
+    }
+    /* blocks */
+
+    .block {
+        height: 100px;
+        width: 150px;
+    }
+    .block h6 {
+        padding: 0;
+        font-size: 4vw;
+    }
+    .blocks .box1 {
+        position: absolute;
+        bottom: -120px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .blocks-section {
+        margin-bottom: 100px;
+    }
+    .big-box {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+    }
+    .big-box h2 {
+        font-size: 1rem;
+    }
+    .box {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .boxes .d-flex {
+        display: block !important;
+    }
+    .blocks .justify-content-end {
+        justify-content: center !important;
+    }
+
+    /* question section */
+    .question p{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        width: 100%;
+    }
+    .qsvg {
+        display: none;
+    }
+    .mobsvg {
+        display: flex;
+    }
+    .question-section button {
+        margin-bottom: -50px;
+    }
+
+    /* footer */
+
+    .footer-div {
+        display: block !important;
+    }
+
+    /* create page */
+
+    .create-section button{
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .create-section h2 {
+        margin-bottom: 0px !important;
+    }
+
+    /* videos page */
+    .video-box {
+        width: 100%;
+        height: 150px;
+    }
+    .videos-section h3 {
+        font-size: 20px !important;
+    }
+    .video-act {
+        height: 200px;
+    }
+    /* partners */ 
+    .part img{
+       height: 20px;
+    }
+    .partner-section .part {
+        padding: 10px !important;
+    }
+    /* blog */ 
+    .blog-section .d-flex {
+        display: block !important;
+    }
+    .blog-section .form-control {
+        width: 100% !important;
+        margin-top: 20px;
+    }
+    .blog-card {
+        height: 200px !important;
+    }
+
+    /* about page */
+    .about-section .row, .terms-section .row {
+        margin-top: 30px !important;
+        padding-top: 0px !important;
+    }
+
+    /* contact page */
+    .contact-section .p-5{
+       padding: 20px !important;
+       margin-bottom: 20px;
+    }
+    .contact-section form {
+        width: 100% !important;
+    }
+    .contact-section .col-md-8{
+        display: block !important;
+    }
+    .contact-section textarea {
+        width: 100%;
+        height: 200px;
+    }
+    .contact-section button {
+        margin-left: 0px !important;
+    }
+
+    /* price page */
+    .price-section .full {
+        height: 55vw !important;
+        padding: 20px !important;
+        margin-bottom: 20px;
+    }
+    .price-section .prices {
+        height: 40vw !important;
+        padding: 10px !important;
+    }
+    .prices span {
+        font-size: 12px !important;
+    }
+    .prices h2 {
+        font-size: 16px !important;
+    }
+    .prices h1 {
+        font-size: 20px !important;
+    }
+    .prices .mt-3 {
+        margin-top: -5px !important;
+    }
+    .prices .ml-5 {
+        margin-left: 20px !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .drp {
+        top: -440px;
+    }
+    .ftr-mb{
+        padding-right: 120px;
+    }
+}

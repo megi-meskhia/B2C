@@ -1,0 +1,118 @@
+.logo {
+	display: none;
+}
+.darkmode-logo {
+	display: block;
+}
+.mobile .darkmode-logo {
+    display: flex !important;
+}
+.text-white {
+    color: #000 !important;
+}
+.dark-text {
+    color: #fff !important;
+}
+.white-btn {
+    background: #000 !important;
+    color: #fff !important;
+}
+.dark-btn {
+	background: #fff !important;
+	color: #000 !important;
+}
+.dark-mode {
+	display: none;
+}
+.light-mode {
+	display: flex;
+}
+
+/* firstpage */
+
+.firstpage {
+	background:#000;
+	color: #fff;
+}
+.lang-btn {
+    background:  #70707067;
+}
+.lang-btn-act {
+    background: #fff ;
+	color: #000 ;
+}
+.firstpage .dropdown-toggle {
+	background: #fff !important;
+}
+
+/* ///////////////////// */
+
+/* header */
+
+header {
+    background: #fff;
+}
+
+/* //////////////////// */
+
+/* sections */
+
+section {
+    background: #000;
+    color: #fff;
+}
+.section-one i {
+    color: #fff;
+}
+
+/* ////////////////// */
+
+/* footer */
+
+footer .black-background {
+    color: #000;
+    background: #fff !important;
+}
+footer .white-background {
+    background: #000 !important;
+}
+footer .dropdown-toggle::after {
+    color: #000;
+}
+.drop-country .dropdown-menu  {
+    background: #fff;
+}
+.drop-country .dropdown-item{
+    color: #000 !important;
+}
+.drop-leng .dropdown-menu{
+    background: #000 !important;
+}
+.drop-leng .dropdown-item {
+    color: #fff !important;
+}
+.white-icon {
+	display: none;
+}
+.black-icon {
+    display: inline-flex;
+}
+.tiktok, .twitter, .facebook, .youtube, .scrollup {
+    background: #000;
+}
+
+/* blog page  */
+.soc a , .blog-section a {
+	color: #fff;
+	cursor: pointer;
+}
+.soc a:hover, .blog-section a:hover {
+	color: #fff !important;
+}
+.blogpage-section a , .about-section a, .terms-section a{
+    color: #fff;
+}
+.active{
+	background: #565656;
+	border-left: 2px solid rgb(188, 188, 188);
+}

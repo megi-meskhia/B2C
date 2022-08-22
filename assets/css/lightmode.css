@@ -1,0 +1,71 @@
+.darkmode-logo {
+	display: none;
+}
+
+/* firstpage */
+.lang-btn {
+    border:1px solid #70707067;
+}
+.lang-btn-act {
+    background: #000;
+	color: #fff;
+}
+.check {
+    display: none;
+}
+
+/* //////////////// */
+
+/* header */
+
+header {
+    background: #000;
+}
+.light-mode {
+	display: none;
+}
+
+/* //////////////////// */
+
+/* footer */
+footer .dropdown-toggle::after {
+    color: #fff;
+}
+.drop-country .dropdown-menu {
+    background: #000;
+}
+.drop-country .dropdown-item{
+    color: #fff !important;
+}
+.black-icon {
+	display: none;
+}
+.tiktok, .twitter, .facebook, .youtube, .scrollup {
+    background: #fff;
+    color: #000;
+}
+
+
+/* blog page */
+
+.soc a , .blog-section a {
+	color: #000;
+	cursor: pointer;
+}
+.soc a:hover, .blog-section a:hover, .videos-section a:hover {
+	color: #000 !important;
+}
+.blogpage-section a, .about-section a, .terms-section a{
+    color: #000 !important;
+}
+.share a {
+    color: #707070 !important;
+    background: none !important;
+}
+.share i {
+    font-size: 20px;
+}
+.active{
+	background: #ebebeb;
+	border-left: 2px solid black;
+}
