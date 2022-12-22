@@ -27,6 +27,44 @@ header {
 
 /* //////////////////// */
 
+/* categories section */
+
+.img1 {
+	background-image: url("/assets/imgs/cat-img1.png");
+}
+.img2 {
+	background-image: url("/assets/imgs/cat-img2.png");
+}
+.img3 {
+	background-image: url("/assets/imgs/cat-img3.png");
+}
+.img4 {
+	background-image: url("/assets/imgs/cat-img4.png");
+}
+.img5 {
+	background-image: url("/assets/imgs/cat-img5.png");
+}
+/* /////////////////// */
+
+/* questions section */
+.qimg {
+    background-image: url("/assets/imgs/quest.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 100%;
+}
+.answer {
+	background-image: url("/assets/imgs/question-bo.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 100%;
+	/* margin-top: -50px; */
+}
+
+/* //////////////////// */
+
 /* footer */
 footer .dropdown-toggle::after {
     color: #fff;

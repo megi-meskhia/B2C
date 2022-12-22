@@ -64,7 +64,36 @@ section {
 .section-one i {
     color: #fff;
 }
-
+.img1 {
+	background-image: url("/assets/imgs/cat-img11.png");
+}
+.img2 {
+	background-image: url("/assets/imgs/cat-img22.png");
+}
+.img3 {
+	background-image: url("/assets/imgs/cat-img33.png");
+}
+.img4 {
+	background-image: url("/assets/imgs/cat-img44.png");
+}
+.img5 {
+	background-image: url("/assets/imgs/cat-img55.png");
+}
+.qimg {
+    background-image: url("/assets/imgs/quest1.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 100%;
+}
+.answer {
+	background-image: url("/assets/imgs/question-bo1.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 100%;
+	/* margin-top: -50px; */
+}
 
 /* ////////////////// */
 

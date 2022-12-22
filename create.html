@@ -16,6 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/4424732b06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/intl-tel-input-master/build/css/intlTelInput.css">
 
 </head>
 <body>
@@ -102,26 +103,28 @@
              <div class="col-md-4 col-12">
                    <h2 class="bold mb-5">მაღაზიის შექმნა</h2>
                    <div class="d-block d-md-none my-3" style="border: 1px solid; height: 200px;"></div>
-                   <form>
-                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ელ.ფოსტა">
+                   <form id="registration">
+                     <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="ელ.ფოსტა">
 
-                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="პაროლი">
+                     <input type="password" class="form-control" name="password" id="password" placeholder="პაროლი">
 
-                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="გაიმეორეთ პაროლი">
+                     <input type="password" class="form-control" name="confirm"  placeholder="გაიმეორეთ პაროლი">
 
-                     <input type="tel" class="form-control" id="formGroupExampleInput" placeholder="ტელეფონი">
+                     <input type="tel" name="telephone" id="telephone" placeholder="">
 
-                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="მაღაზიის სახელი">
+                     <input type="text" class="form-control" name="names" placeholder="მაღაზიის სახელი">
 
                      <small  class="form-text text-muted font-italic">დასაშვები სიმბოლოებია:</small>
-                   </form>
-                   <div class="mt-4">
-                       <h6>თქვენი მაღაზიის დომენური სახელი</h6>
-                       <h5 class="p-2" style="background: #70707043;">დომენური სახელი</h5>
-                       <p>გთხოვთ მონიშნოთ</p>
-                       <a href="#"><button class="btn mr-2 mt-2 dark-btn" style="height: 46px;width: 250px;">მაღაზიის შექმნა</button><br class="d-block d-md-none"></a>
 
-                   </div>
+                     <div class="mt-4">
+                        <h6>თქვენი მაღაზიის დომენური სახელი</h6>
+                        <h5 class="p-2" style="background: #70707043;">დომენური სახელი</h5>
+                        <p>გთხოვთ მონიშნოთ</p>
+                        <a href="#"><button type="submit" class="btn mr-2 mt-2 dark-btn" style="height: 46px;width: 250px;">მაღაზიის შექმნა</button><br class="d-block d-md-none"></a>
+ 
+                    </div>
+                   </form>
+                   
              </div>
              <div class="col-md-8 col-12 px-5 d-none d-md-block">
                   <div style="border: 1px solid; height: 100%;">
@@ -280,9 +283,74 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+
+    <script src="script.js"></script>
+    <script src="register.js"></script>  
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="assets/intl-tel-input-master/build/js/intlTelInput-jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script>
+      // phone
+$(document).ready(function(){
+ $("#telephone").intlTelInput({
+  // whether or not to allow the dropdown
+  allowDropdown: true,
+  
+  // if there is just a dial code in the input: remove it on blur, and re-add it on focus
+  autoHideDialCode: true,
+  
+  // add a placeholder in the input with an example number for the selected country
+  autoPlaceholder: "polite",
+  
+  // modify the auto placeholder
+  customPlaceholder: null,
+  
+  // append menu to specified element
+  dropdownContainer: null,
+  
+  // don't display these countries
+  excludeCountries: [],
+  
+  // format the input value during initialisation and on setNumber
+  formatOnDisplay: true,
+  
+  // geoIp lookup function
+  geoIpLookup: null,
+  
+  // inject a hidden input with this name, and on submit, populate it with the result of getNumber
+  hiddenInput: "",
+  
+  // initial country
+  initialCountry: "",
+  
+  // localized country names e.g. { 'de': 'Deutschland' }
+  localizedCountries: null,
+  
+  // don't insert international dial codes
+  nationalMode: true,
+  
+  // display only these countries
+  onlyCountries: [],
+  
+  // number type to use for placeholders
+  placeholderNumberType: "MOBILE",
+  
+  // the countries at the top of the list. defaults to united states and united kingdom
+  preferredCountries: [ "ge", "az" ],
+  
+  // display the country dial code next to the selected flag so it's not part of the typed number
+  separateDialCode: true,
+  
+  // specify the path to the libphonenumber script to enable validation/formatting
+  utilsScript: ""
+});
+})
+ </script>
 </body>
 </html>

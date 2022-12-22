@@ -45,6 +45,9 @@ button{
 .show>.btn.dropdown-toggle:focus, .btn.focus, .btn:focus, input {
 	box-shadow: none !important;
 }
+input:focus {
+	outline: none !important;
+}
 .form-control:focus {
 	border-color: #4e555b !important;
 }
@@ -69,6 +72,15 @@ h2 {
 }
 a {
 	text-decoration: none !important;
+}
+.error {
+	color: red;
+    font-style: italic;
+}
+.iti-flag {background-image: url("path/to/flags.png");}
+ 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .iti-flag {background-image: url("path/to/flags@2x.png");}
 }
 /* ////////////////////////////// */
 
@@ -174,21 +186,32 @@ section {
 }
 .cat-img {
 	margin-left: -1px;
+	width: 100%;
+	height: 650px;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .cat-img h3 {
-	margin-top: -150px;
-}
-.img-hiden {
-	display: none;
+	position: absolute;
+	bottom: 150px;
 }
 .cat-img:hover h3 {
 	visibility: hidden;
 }
-.cat-img:hover .img-show {
-	display: none;	
+.img1:hover {
+	background-image: url("/assets/imgs/cat-img5.png");
 }
-.cat-img:hover .img-hiden {
-	display: flex;
+.img2:hover {
+	background-image: url("/assets/imgs/cat-img5.png");
+}
+.img3:hover {
+	background-image: url("/assets/imgs/cat-img5.png");
+}
+.img4:hover {
+	background-image: url("/assets/imgs/cat-img2.png");
+}
+.img5:hover {
+	background-image: url("/assets/imgs/cat-img1.png");
 }
 
 
@@ -258,6 +281,10 @@ section {
 .boxes, .box1p, .box2p, .box3p, .box4p, .box5p {
 	display: none;
 }
+.block:hover, .box:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.175);
+	/* border-color: red; */
+}
 
 /* //////////////////////// */
 
@@ -285,14 +312,6 @@ section {
 }
 .questions p {
 	cursor: pointer;
-}
-.answer {
-	background-image: url("/assets/imgs/question-bo.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 300px;
-	width: 100%;
-	/* margin-top: -50px; */
 }
 .clicked-q {
 	transform: rotate(0deg) !important;
@@ -446,6 +465,20 @@ footer .dropdown-toggle::after {
 	border-bottom: 1px solid #70707089!important;
 	padding-left: 0px !important;
 	margin-bottom: 10px;
+}
+#telephone {
+	border: none !important;
+    border-bottom: 1px solid #70707089!important;
+    padding-right: 0px !important;
+	width: 100%;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+.iti {
+    margin-bottom: 10px !important;
+}
+.iti--separate-dial-code {
+	width: 100% !important;
 }
 
 /* price page */
